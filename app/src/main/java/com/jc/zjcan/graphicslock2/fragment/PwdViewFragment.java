@@ -60,7 +60,6 @@ public class PwdViewFragment extends Fragment implements GraphicslockView.OnTouc
             else
                 titleText.setText("请开始绘制您的密码图案！");
         }
-        Log.v("*********","helo");
         lockView = (GraphicslockView) view.findViewById(R.id.fragment_pwd_view_graphicsView);
         lockView.setOnTouchPointsListener(this);
         commit.setOnClickListener(this);
