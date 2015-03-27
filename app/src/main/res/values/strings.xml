@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GraphicsLock2</string>
+    <string name="media_ejected">储存卡已拔出</string>
+    <string name="str_dialog_message_default">处理中,请稍候…</string>
+    <string name="dialog_btn">确定</string>
+    <string name="dialog_cancle_btn">取消</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="lockview_title">请绘制手势密码</string>
+    <string name="title_activity_un_lock_view">UnLockViewActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+</resources>

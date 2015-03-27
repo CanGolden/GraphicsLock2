@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jc.zjcan.graphicslock2.fragment.PwdViewFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lock_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fragment_pwd_view_title_text"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@color/text_bg"
+            android:text="@string/lockview_title"
+            android:textSize="20sp"
+            android:textColor="@color/text_color" />
+
+        <com.jc.zjcan.graphicslock2.view.GraphicslockView
+            android:id="@+id/fragment_pwd_view_graphicsView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/fragment_pwd_view_btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.1"
+            android:visibility="gone"
+            android:background="@color/text_bg">
+
+            <VideoView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:background="@null"
+                android:textColor="@color/text_color"
+                android:text="确定"
+                android:id="@+id/fragment_pwd_view_btn_commit" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
