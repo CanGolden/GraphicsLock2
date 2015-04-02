@@ -13,9 +13,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.jc.zjcan.application.Lock2Application;
-import com.jc.zjcan.graphicslock2.MainActivity;
 import com.jc.zjcan.graphicslock2.R;
 import com.jc.zjcan.graphicslock2.WelcomeActivity;
+import com.jc.zjcan.graphicslock2.AlarmAcitivity;
 import com.jc.zjcan.graphicslock2.view.GraphicslockView;
 
 public class PwdViewFragment extends Fragment implements GraphicslockView.OnTouchPointsListener, View.OnClickListener {
@@ -88,7 +88,7 @@ public class PwdViewFragment extends Fragment implements GraphicslockView.OnTouc
                     //检查成功
                     if (passWord.equals(pwdStr)) {
                         titleText.setText("匹配成功 ");
-                        getActivity().startActivity(new Intent(getActivity(), MainActivity.class));
+                        getActivity().startActivity(new Intent(getActivity(), AlarmAcitivity.class));
                         getActivity().finish();
                     } else
                     //检查失败
@@ -135,7 +135,7 @@ public class PwdViewFragment extends Fragment implements GraphicslockView.OnTouc
         switch (v.getId()) {
             case R.id.fragment_pwd_view_btn_commit:
                 app.saveSettingParams(WelcomeActivity.IsSetLock, passWord);
-                getActivity().startActivity(new Intent(getActivity(), MainActivity.class));
+                getActivity().startActivity(new Intent(getActivity(), AlarmAcitivity.class));
                 getActivity().finish();
                 break;
             default:

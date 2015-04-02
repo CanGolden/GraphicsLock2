@@ -9,8 +9,9 @@
     <string name="title_activity_welcome">WelcomeActivity</string>
     <string name="lockview_title">请绘制手势密码</string>
     <string name="title_activity_un_lock_view">UnLockViewActivity</string>
-
-<!-- TODO: Remove or change this placeholder text -->
+    <string name="add_alarm">添加闹钟</string>
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_alarm_acitivity">AlarmAcitivity</string>
 </resources>

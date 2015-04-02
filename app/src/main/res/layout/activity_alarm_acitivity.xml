@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <com.jc.zjcan.graphicslock2.view.TimeView
+                    android:id="@+id/tab_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/timeView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:textSize="36sp" />
+
+                </com.jc.zjcan.graphicslock2.view.TimeView>
+
+                <com.jc.zjcan.graphicslock2.view.AlarmView
+                    android:id="@+id/tab_alarm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/alarm_list"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"></ListView>
+                    <Button
+                        android:id="@+id/add_alarm"
+                        android:text="@string/add_alarm"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.jc.zjcan.graphicslock2.view.AlarmView>
+
+                <LinearLayout
+                    android:id="@+id/tab_timer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab_stopwatch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"></LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</FrameLayout>
