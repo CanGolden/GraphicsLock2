@@ -28,16 +28,22 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".MainActivity"
-            android:label="@string/title_activity_main"></activity>
+            android:label="@string/title_activity_main" />
         <activity
             android:name=".AlarmAcitivity"
             android:label="@string/title_activity_alarm_acitivity"
-            android:theme="@style/Theme.AppCompat.Light"></activity>
+            android:theme="@style/Theme.AppCompat.Light" />
+
         <receiver android:name=".receive.AlarmReceive">
-             <intent-filter>
-                 <action android:name=""/>
-             </intent-filter>
+            <intent-filter>
+                <action android:name="jcan_alarm" />
+            </intent-filter>
         </receiver>
+
+        <service
+            android:name=".service.AlarmService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>

@@ -47,12 +47,13 @@
                     <ListView
                         android:id="@+id/alarm_list"
                         android:layout_width="fill_parent"
-                        android:layout_height="0dp"></ListView>
+                        android:layout_height="wrap_content"></ListView>
+
                     <Button
                         android:id="@+id/add_alarm"
-                        android:text="@string/add_alarm"
                         android:layout_width="fill_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_alarm" />
 
                 </com.jc.zjcan.graphicslock2.view.AlarmView>
 
