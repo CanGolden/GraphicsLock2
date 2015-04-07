@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jc.zjcan.graphicslock2">
+    package="com.jc.zjcan.graphicslock2" >
 
     <uses-permission android:name="android.permission.VIBRATE" />
 
@@ -9,12 +9,12 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".WelcomeActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,16 +34,16 @@
             android:label="@string/title_activity_alarm_acitivity"
             android:theme="@style/Theme.AppCompat.Light" />
 
-        <receiver android:name=".receive.AlarmReceive">
+        <receiver android:name=".receive.AlarmReceive" >
             <intent-filter>
                 <action android:name="jcan_alarm" />
             </intent-filter>
         </receiver>
 
-        <service
-            android:name=".service.AlarmService"
-            android:enabled="true"
-            android:exported="true"></service>
+        <activity
+            android:name=".AlarmNotificeActivity"
+            android:label="@string/title_activity_alarm_notifice" >
+        </activity>
     </application>
 
 </manifest>
